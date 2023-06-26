@@ -27,11 +27,11 @@ class FlightSearch:
         start_date = datetime.now() + timedelta(days=1)
         end_date = datetime.now() + timedelta(days=180)
         params = {
-            "fly_from": "LON",
+            "fly_from": "BRE",
             "fly_to": city_code,
             "date_from": start_date.strftime("%d/%m/%Y"),
             "date_to": end_date.strftime("%d/%m/%Y"),
-            "nights_in_dst_from": 3,
+            "nights_in_dst_from": 5,
             "nights_in_dst_to": 14,
             "flight_type": "round",
             "one_for_city": 1

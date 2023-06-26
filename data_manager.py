@@ -1,7 +1,7 @@
 import requests
 import os
 
-SHEETY_ENDPOINT = os.environ["SHEETY_ENDPOINT"]
+SHEETY_ENDPOINT = os.environ["SHEETY_ENDPOINT"] + "prices"
 SHEETY_HEADER = {
     "Authorization": os.environ["SHEETY_TOKEN"]
 }

@@ -2,6 +2,8 @@ class FlightData:
     # This class is responsible for structuring the flight data.
     def __init__(self):
         self.all_flight_details = []
+        self.stop_overs = 0
+        self.via_city = ""
 
     def structure_data(self, flight):
         departure_date_unformatted = flight["data"][0]["route"][0]["local_departure"].split("T")

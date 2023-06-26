@@ -22,3 +22,4 @@ for entry in sheet_data:
     flight_details = flight_data.structure_data(flight)
     notification_manager.cheap_flight_notification(flight_details, entry["lowestPrice"])
 
+print(flight_data.all_flight_details)
